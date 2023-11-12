@@ -101,7 +101,7 @@ export default function Home() {
                <li><strong>Працювала</strong> з відомими брендами та <strong>ІТ продуктами:</strong></li>
              </ul>
            </div>
-           <div className="md:basis-5/12 flex-initial grow-0 max-w-md relative h-full w-full">
+           <div className="md:basis-5/12 flex-initial grow-0 max-w-xs md:max-w-md relative m:h-full w-full">
              <Image src={pmLanaImage} alt="" className="md:absolute md:top-0 right-0 z-20" />
            </div>
          </div>
@@ -174,7 +174,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl mb-10 font-extrabold uppercase text-default">
             Програма інтенсиву
           </h2>
-          <div className="flex gap-10 leading-10">
+          <div className="flex gap-10 flex-col md:flex-row leading-10">
             <div className="basis-1/2 grow-1 bg-white rounded-3xl p-5">
               <ol className="list-decimal list-inside">
                 <li>
@@ -310,10 +310,10 @@ export default function Home() {
           <h3 className="text-3xl uppercase text-white max-w-2xl mb-3">
             Приєднуйтесь до інтенсиву вже зараз за <b>спеціальною, обмеженою у часі пропозицією всього за</b>
           </h3>
-          <div className="md:flex gap-10 items-end">
+          <div className="flex flex-col md:flex-row gap-2 items-center md:gap-10 md:items-end">
             <div className="basis-2/3">
                 <h3 className="uppercase text-xl">До старту навчання залишилося</h3>
-                <p className="text-5xl md:text-6xl font-extrabold">00:00:00:00</p>
+                <p className="text-4xl md:text-6xl font-extrabold">00:00:00:00</p>
             </div>
             <div className="bg-label p-10 rounded-3xl">
               <div className="flex flex-col items-center md:flex-row gap-3 items-center mb-5">

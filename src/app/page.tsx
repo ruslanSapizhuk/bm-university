@@ -153,11 +153,11 @@ export default function Home() {
           </div>
         </section>
         <section className="max-w-7xl m-auto dark:text-black">
-          <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase text-default">
+          <h2 className="text-2xl md:text-4xl mb-5 font-extrabold uppercase text-default">
             Що ви отримаєте під час інтенсиву
           </h2>
           <div className="mb-20">
-            <ol className="list-decimal list-inside text-xl font-bold">
+            <ol className="list-decimal list-inside font-bold">
               <li>
                 Теоретичні знання з продукт менеджменту та розуміння професії
               </li>
@@ -171,11 +171,11 @@ export default function Home() {
           </div>
         </section>
         <section className="max-w-7xl m-auto dark:text-black mb-20">
-          <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase text-default">
+          <h2 className="text-2xl md:text-4xl mb-5 font-extrabold uppercase text-default">
             Програма інтенсиву
           </h2>
-          <div className="flex gap-10 flex-col md:flex-row leading-10">
-            <div className="basis-1/2 grow-1 bg-white rounded-3xl p-5">
+          <div className="flex flex-col leading-10 bg-white rounded-3xl p-5 md:gap-10 md:flex-row md:bg-transparent md:rounded-0 md:p-0">
+            <div className="basis-1/2 grow-1 md:bg-white md:rounded-3xl md:p-5">
               <ol className="list-decimal list-inside">
                 <li>
                   Хто такий продукт менеджер
@@ -194,7 +194,7 @@ export default function Home() {
                 </li>
               </ol>
             </div>
-            <div className="basis-1/2 grow-1 bg-white rounded-3xl p-5">
+            <div className="basis-1/2 grow-1 md:bg-white md:rounded-3xl md:p-5">
               <ol className="list-decimal list-inside" start={6}>
                 <li>
                   Цільова аудиторія

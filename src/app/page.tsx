@@ -56,7 +56,7 @@ export default function Home() {
             <p className="mb-10 dark:text-black">
               Дізнайся як створювати та монетизувати онлайн продукти, які полюблять мільйони
             </p>
-            <p className="text-2xl text-default md:text-3xl font-bold uppercase mb-14">
+            <p className="text-xl text-default md:text-2xl font-bold uppercase mb-14">
               Встигни взяти участь зі знижкою 75%
             </p>
             <Button inverted className="w-full md:w-auto mb-10">
@@ -76,7 +76,7 @@ export default function Home() {
 
               Your browser does not support the video tag.
             </video>
-            <h2 className="text-xl md:text-3xl mt-5 font-extrabold uppercase dark:text-black">
+            <h2 className="text-2xl md:text-3xl mt-5 font-extrabold uppercase dark:text-black">
               Хто такий
               <br />
               <span className="font-normal text-default">Product Management</span>
@@ -86,7 +86,7 @@ export default function Home() {
         <section className="mb-20 max-w-7xl m-auto">
          <div className="md:flex md:justify-between md:gap-10">
            <div className="md:basis-7/12 flex-initial grow-0 align-bottom dark:text-black">
-             <h2 className="text-3xl md:text-5xl mb-10 font-extrabold uppercase">
+             <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase">
                Авторка інтенсиву
                <br />
                <b className="uppercase font-normal text-default">
@@ -117,7 +117,7 @@ export default function Home() {
         <section className="mb-20 max-w-7xl m-auto">
           <div className="align-bottom dark:text-black">
             <div className="md:flex">
-              <h2 className="text-3xl md:text-5xl mb-10 font-extrabold uppercase font-[700] text-default basis-1/2">
+              <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase font-[700] text-default basis-1/2">
                 Для кого підійде<br />
                 інстенсив?
               </h2>
@@ -153,7 +153,7 @@ export default function Home() {
           </div>
         </section>
         <section className="max-w-7xl m-auto dark:text-black">
-          <h2 className="text-3xl md:text-5xl mb-10 font-extrabold uppercase text-default">
+          <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase text-default">
             Що ви отримаєте під час інтенсиву
           </h2>
           <div className="mb-20">
@@ -171,7 +171,7 @@ export default function Home() {
           </div>
         </section>
         <section className="max-w-7xl m-auto dark:text-black mb-20">
-          <h2 className="text-3xl md:text-5xl mb-10 font-extrabold uppercase text-default">
+          <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase text-default">
             Програма інтенсиву
           </h2>
           <div className="flex gap-10 flex-col md:flex-row leading-10">
@@ -220,7 +220,7 @@ export default function Home() {
           <Button className="mt-10" inverted>Взяти участь зі знижкою 75%</Button>
         </section>
         <section className="mb-20 max-w-7xl m-auto dark:text-black">
-          <h2 className="text-3xl md:text-4xl mb-10 font-extrabold uppercase text-default">
+          <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase text-default">
             Де ти можеш працювати <br />
             якщо станеш Продукт менеджером?
           </h2>
@@ -307,7 +307,7 @@ export default function Home() {
         {/*  </div>*/}
         {/*</section>*/}
         <div className="p-10 bg-gradient mb-20 rounded-2xl">
-          <h3 className="text-3xl uppercase text-white max-w-2xl mb-3">
+          <h3 className="text-2xl md:text-3xl uppercase text-white max-w-2xl mb-3">
             Приєднуйтесь до інтенсиву вже зараз за <b>спеціальною, обмеженою у часі пропозицією всього за</b>
           </h3>
           <div className="flex flex-col md:flex-row gap-2 items-center md:gap-10 md:items-end">
@@ -328,7 +328,7 @@ export default function Home() {
           </div>
         </div>
         <section className="mb-20 max-w-7xl m-auto dark:text-black">
-          <h2 className="text-3xl md:text-5xl mb-10 font-extrabold uppercase">
+          <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase">
             Відгуки <br />
             студентів{" "}
             <span style={{ color: "#A699FF" }} className="pr-3">

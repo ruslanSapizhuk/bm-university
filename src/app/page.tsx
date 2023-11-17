@@ -1,6 +1,7 @@
 import Button from "../components/Button";
 // import ConnectedForm from "@/containers/ConnectedForm";
 import Image from "next/image";
+import CountDown from "@/components/CountDown";
 import Link from "next/link";
 // import wpAppImage from "@/assets/wispence-app.png";
 // import phone from "@/assets/phone.png";
@@ -29,6 +30,7 @@ import icon3 from "@/assets/icon_3.png";
 import icon4 from "@/assets/icon_4.png";
 import icon5 from "@/assets/icon_5.png";
 import hart from "@/assets/hart.png";
+
 
 export default function Home() {
   return (
@@ -313,7 +315,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-2 items-center md:gap-10 md:items-end">
             <div className="basis-2/3">
                 <h3 className="uppercase text-xl">До старту навчання залишилося</h3>
-                <p className="text-4xl md:text-6xl font-extrabold">00:00:00:00</p>
+              <CountDown startDate={new Date("12-04-2023")} format={["days", "hours", "minutes", "seconds"]}/>
             </div>
             <div className="bg-label p-10 rounded-3xl">
               <div className="flex flex-col items-center md:flex-row gap-3 items-center mb-5">

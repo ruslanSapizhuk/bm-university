@@ -3,14 +3,11 @@ import Button from "../components/Button";
 import Image from "next/image";
 import CountDown from "@/components/CountDown";
 import Link from "next/link";
-// import wpAppImage from "@/assets/wispence-app.png";
-// import phone from "@/assets/phone.png";
 import pmLanaImage from "@/assets/PM-Lana.png";
 import Danone from "@/assets/Danone.png";
 import ActiveChat from "@/assets/ActiveChat.png";
 import ABLnBev from "@/assets/ABLnBev.png";
 import Wispence from "@/assets/Wispence.png";
-// import signature from "@/assets/signature.png";
 import whereCanWork from "@/assets/where_can_work.png";
 import IrynkaKhalus from "@/assets/IrynkaKhalus.png";
 import AnastasiyaMelnik from "@/assets/AnastasiyaMelnik.png";
@@ -30,6 +27,9 @@ import icon3 from "@/assets/icon_3.png";
 import icon4 from "@/assets/icon_4.png";
 import icon5 from "@/assets/icon_5.png";
 import hart from "@/assets/hart.png";
+import Video1 from "@/components/videos/Video1";
+import Video2 from "@/components/videos/Video2";
+import Video3 from "@/components/videos/Video3";
 
 
 export default function Home() {
@@ -343,6 +343,15 @@ export default function Home() {
             </span>
           </h2>
           <div className="grid md:grid-cols-3 gap-4 grid-flow-row auto-rows-max">
+            <article className="rounded-3xl auto-rows-min text-xs flex flex-col overflow-hidden">
+              <Video1 />
+            </article>
+            <article className="rounded-3xl auto-rows-min text-xs flex flex-col overflow-hidden">
+              <Video2 />
+            </article>
+            <article className="rounded-3xl auto-rows-min text-xs flex flex-col overflow-hidden">
+              <Video3 />
+            </article>
             <article className="bg-white p-3 rounded-3xl auto-rows-min text-xs flex flex-col">
               <div className="flex gap-5 items-center mb-2">
                 <Image src={YraGlebov} alt={""} />

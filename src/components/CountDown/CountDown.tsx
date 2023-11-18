@@ -28,6 +28,7 @@ export const CountDown: FC<Props> = ({ startDate, format }) => {
             {formatDuration(duration, {
                 format,
                 delimiter: ":",
+                zero: true,
                 locale: { formatDistance: (_token: string, count: number) => String(count).padStart(2, '0') }
             })}
         </p>

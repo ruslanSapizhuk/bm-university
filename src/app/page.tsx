@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <>
       <main className="p-5 md:p-24 md:pt-0">
-        <header className="flex justify-center items-baseline my-10 max-w-7xl m-auto">
+        <header className="flex justify-center items-baseline my-5 md:my-10 max-w-7xl m-auto">
           <div className="text-2xl dark:text-black">
             <i>
               <b>B</b>
@@ -45,7 +45,7 @@ export default function Home() {
             </i>
           </div>
         </header>
-        <section className="md:flex md:justify-between md:gap-20 mb-10 max-w-7xl m-auto">
+        <section className="md:flex md:justify-between md:gap-20 mb-10 md:mb-20 max-w-7xl m-auto">
           <div className="md:basis-3/6 grow-1">
             <span className="text-sm px-2 py-1 normal-case font-light rounded-sm bg-label">
                 старт 27 листопада
@@ -61,9 +61,11 @@ export default function Home() {
             <p className="text-xl text-default md:text-2xl font-bold uppercase mb-14">
               Встигни взяти участь зі знижкою 75%
             </p>
-            <Button inverted className="w-full md:w-auto mb-10">
+            <Link href={"https://secure.wayforpay.com/button/bf10bc9754bad"} target={"_blank"}>
+            <Button inverted className="w-full mb-10 md:mb-0 md:w-auto">
               Взяти участь
             </Button>
+            </Link>
           </div>
           <div className="md:basis-3/6 grow-1">
             <video
@@ -85,7 +87,7 @@ export default function Home() {
             </h2>
           </div>
         </section>
-        <section className="mb-20 max-w-7xl m-auto">
+        <section className="mb-10 md:mb-20 max-w-7xl m-auto">
          <div className="md:flex md:justify-between md:gap-10">
            <div className="md:basis-7/12 flex-initial grow-0 align-bottom dark:text-black">
              <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase">
@@ -116,9 +118,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="mb-20 max-w-7xl m-auto">
+        <section className="mb-10 md:mb-20 max-w-7xl m-auto">
           <div className="align-bottom dark:text-black">
-            <div className="md:flex">
+            <div className="md:flex mb-10">
               <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase font-[700] text-default basis-1/2">
                 Для кого підійде<br />
                 інстенсив?
@@ -151,14 +153,15 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <Button className="mt-10" inverted>Взяти участь зі знижкою 75%</Button>
+            <Link href={"https://secure.wayforpay.com/button/bf10bc9754bad"} target={"_blank"}>
+              <Button className="mt-10" inverted>Взяти участь зі знижкою 75%</Button>
+            </Link>
           </div>
         </section>
-        <section className="max-w-7xl m-auto dark:text-black">
+        <section className="max-w-7xl m-auto dark:text-black mb-10 md:md-20">
           <h2 className="text-2xl md:text-4xl mb-5 font-extrabold uppercase text-default">
             Що ви отримаєте під час інтенсиву
           </h2>
-          <div className="mb-20">
             <ol className="list-decimal list-inside font-bold">
               <li>
                 Теоретичні знання з продукт менеджменту та розуміння професії
@@ -170,9 +173,8 @@ export default function Home() {
                   Додаткові матеріали до лекцій та доступ до закритого Телеграм каналу
               </li>
             </ol>
-          </div>
         </section>
-        <section className="max-w-7xl m-auto dark:text-black mb-20">
+        <section className="max-w-7xl m-auto dark:text-black mb-10 md:mb-20">
           <h2 className="text-2xl md:text-4xl mb-5 font-extrabold uppercase text-default">
             Програма інтенсиву
           </h2>
@@ -219,9 +221,11 @@ export default function Home() {
               </ol>
             </div>
           </div>
-          <Button className="mt-10" inverted>Взяти участь зі знижкою 75%</Button>
+          <Link href={"https://secure.wayforpay.com/button/bf10bc9754bad"} target={"_blank"}>
+            <Button className="mt-10" inverted>Взяти участь зі знижкою 75%</Button>
+          </Link>
         </section>
-        <section className="mb-20 max-w-7xl m-auto dark:text-black">
+        <section className="mb-10 md:mb-20 max-w-7xl m-auto dark:text-black">
           <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase text-default">
             Де ти можеш працювати <br />
             якщо станеш Продукт менеджером?
@@ -308,28 +312,30 @@ export default function Home() {
         {/*    <ConnectedForm />*/}
         {/*  </div>*/}
         {/*</section>*/}
-        <div className="p-10 bg-gradient mb-20 rounded-2xl">
-          <h3 className="text-2xl md:text-3xl uppercase text-white max-w-2xl mb-3">
+        <section className="p-10 bg-gradient mb-10 md:mb-20 rounded-2xl max-w-4xl ml-auto mr-auto">
+          <h3 className="text-xl md:text-2xl md:text-3xl md:uppercase md:text-white max-w-2xl mb-3">
             Приєднуйтесь до інтенсиву вже зараз за <b>спеціальною, обмеженою у часі пропозицією всього за</b>
           </h3>
           <div className="flex flex-col md:flex-row gap-2 items-center md:gap-10 md:items-end">
-            <div className="basis-2/3">
-                <h3 className="uppercase text-xl">До старту навчання залишилося</h3>
+            <div className="basis-2/3 text-center md:text-left">
+                <h3 className="md:uppercase text-xl">До кінця акції залишилося</h3>
               <CountDown startDate={new Date("12-04-2023")} format={["days", "hours", "minutes", "seconds"]}/>
             </div>
-            <div className="bg-label p-10 rounded-3xl">
-              <div className="flex flex-col items-center md:flex-row gap-3 items-center mb-5">
-                <span className="text-2xl font-extrabold">$20</span>
-                <span className="text-white">~790грн</span>
-                <span className="text-xs">Діє пропозиція зі знижкою вартість без знижки 85$ ~3200грн</span>
+            <div className="bg-label p-10 rounded-3xl text-center">
+              <div className="flex flex-col md:items-center md:flex-row gap-3 items-center mb-5">
+                <span className="text-slate-600 text-2xl md:text-xs"><s>3200</s></span>
+                <span className="text-3xl md:text-xs font-bold">780грн</span>
+                <span className="text-xl md:text-xs">Діє пропозиція зі знижкою вартість без знижки 85$ ~3200грн</span>
               </div>
+              <Link href={"https://secure.wayforpay.com/button/bf10bc9754bad"} target={"_blank"}>
               <Button>
                 Приєднатися
               </Button>
+              </Link>
             </div>
           </div>
-        </div>
-        <section className="mb-20 max-w-7xl m-auto dark:text-black">
+        </section>
+        <section className="mb-10 md:mb-20 max-w-7xl m-auto dark:text-black">
           <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase">
             Відгуки <br />
             студентів{" "}

@@ -316,22 +316,21 @@ export default function Home() {
           <h3 className="text-xl md:text-2xl md:text-3xl md:uppercase md:text-white max-w-2xl mb-3">
             Приєднуйтесь до інтенсиву вже зараз за <b>спеціальною, обмеженою у часі пропозицією всього за</b>
           </h3>
-          <div className="flex flex-col md:flex-row gap-2 items-center md:gap-10 md:items-end">
-            <div className="basis-2/3 text-center md:text-left">
-                <h3 className="md:uppercase text-xl">До кінця акції залишилося</h3>
-              <CountDown startDate={new Date("12-04-2023")} format={["days", "hours", "minutes", "seconds"]}/>
-            </div>
+          <div className="flex flex-col md:flex-row gap-2 items-center md:gap-10">
             <div className="bg-label p-10 rounded-3xl text-center">
               <div className="flex flex-col md:items-center md:flex-row gap-3 items-center mb-5">
-                <span className="text-slate-600 text-2xl md:text-xs"><s>3200</s></span>
-                <span className="text-3xl md:text-xs font-bold">780грн</span>
-                <span className="text-xl md:text-xs">Діє пропозиція зі знижкою вартість без знижки 85$ ~3200грн</span>
+                <span className="text-slate-600 text-2xl md:text-xl"><s>3200</s></span>
+                <span className="text-3xl md:text-2xl font-bold">780грн</span>
               </div>
               <Link href={"https://secure.wayforpay.com/button/bf10bc9754bad"} target={"_blank"}>
-              <Button>
-                Приєднатися
-              </Button>
+                <Button>
+                  Приєднатися
+                </Button>
               </Link>
+            </div>
+            <div className="basis-2/3 text-center md:text-left">
+                <h3 className="md:uppercase text-xl">До кінця акції залишилося</h3>
+              <CountDown startDate={new Date("12-04-2023")} format={["hours", "minutes", "seconds"]}/>
             </div>
           </div>
         </section>

@@ -31,6 +31,8 @@ import Video1 from "@/components/videos/Video1";
 import Video2 from "@/components/videos/Video2";
 import Video3 from "@/components/videos/Video3";
 
+const LINK = "https://secure.wayforpay.com/button/bf10bc9754bad";
+
 
 export default function Home() {
   return (
@@ -61,7 +63,7 @@ export default function Home() {
             <p className="text-xl text-default md:text-2xl font-bold uppercase mb-14">
               Встигни взяти участь зі знижкою 75%
             </p>
-            <Link href={"https://secure.wayforpay.com/button/bf10bc9754bad"} target={"_blank"}>
+            <Link href={LINK} target={"_blank"}>
             <Button inverted className="w-full mb-10 md:mb-0 md:w-auto">
               Взяти участь
             </Button>
@@ -153,7 +155,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <Link href={"https://secure.wayforpay.com/button/bf10bc9754bad"} target={"_blank"}>
+            <Link href={LINK} target={"_blank"}>
               <Button className="mt-10" inverted>Взяти участь зі знижкою 75%</Button>
             </Link>
           </div>
@@ -221,7 +223,7 @@ export default function Home() {
               </ol>
             </div>
           </div>
-          <Link href={"https://secure.wayforpay.com/button/bf10bc9754bad"} target={"_blank"}>
+          <Link href={LINK} target={"_blank"}>
             <Button className="mt-10" inverted>Взяти участь зі знижкою 75%</Button>
           </Link>
         </section>
@@ -322,7 +324,7 @@ export default function Home() {
                 <span className="text-slate-600 text-2xl md:text-xl"><s>3200</s></span>
                 <span className="text-3xl md:text-2xl font-bold">780грн</span>
               </div>
-              <Link href={"https://secure.wayforpay.com/button/bf10bc9754bad"} target={"_blank"}>
+              <Link href={LINK} target={"_blank"}>
                 <Button>
                   Приєднатися
                 </Button>

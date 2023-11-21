@@ -1,4 +1,5 @@
-import Button from "../components/Button";
+import Layout from "@/components/Layout";
+import Button from "@/components/Button";
 // import ConnectedForm from "@/containers/ConnectedForm";
 import Image from "next/image";
 import CountDown from "@/components/CountDown";
@@ -36,7 +37,7 @@ const LINK = "https://secure.wayforpay.com/button/bf10bc9754bad";
 
 export default function Home() {
   return (
-    <>
+    <Layout>
       <main className="p-5 md:p-24 md:pt-0">
         <header className="flex justify-center items-baseline my-5 md:my-10 max-w-7xl m-auto">
           <div className="text-2xl dark:text-black">
@@ -64,9 +65,9 @@ export default function Home() {
               Встигни взяти участь зі знижкою 75%
             </p>
             <Link href={LINK} target={"_blank"}>
-            <Button inverted className="w-full mb-10 md:mb-0 md:w-auto">
-              Взяти участь
-            </Button>
+              <Button inverted className="w-full mb-10 md:mb-0 md:w-auto">
+                Взяти участь
+              </Button>
             </Link>
           </div>
           <div className="md:basis-3/6 grow-1">
@@ -90,27 +91,27 @@ export default function Home() {
           </div>
         </section>
         <section className="mb-10 md:mb-20 max-w-7xl m-auto">
-         <div className="md:flex md:justify-between md:gap-10">
-           <div className="md:basis-7/12 flex-initial grow-0 align-bottom dark:text-black">
-             <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase">
-               Авторка інтенсиву
-               <br />
-               <b className="uppercase font-normal text-default">
-                 Product Manager
-               </b>
-             </h2>
-             <ul className="mb-5 list-disc list-inside">
-               <li>7 років роботи в ІТ</li>
-               <li><strong>заснувала</strong> діджитал агенство повного циклу <span className="uppercase font-bold">business maker</span></li>
-               <li><strong>Навчила</strong> більше <strong>60 людей</strong> продукт менеджменту</li>
-               <li><strong>IT блогер:</strong> експертний блог в IG 8к+ аудиторії</li>
-               <li><strong>Працювала</strong> з відомими брендами та <strong>ІТ продуктами:</strong></li>
-             </ul>
-           </div>
-           <div className="md:basis-5/12 flex-initial grow-0 max-w-xs md:max-w-md relative m:h-full w-full">
-             <Image src={pmLanaImage} alt="" className="md:absolute md:top-0 right-0 z-20" />
-           </div>
-         </div>
+          <div className="md:flex md:justify-between md:gap-10">
+            <div className="md:basis-7/12 flex-initial grow-0 align-bottom dark:text-black">
+              <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase">
+                Авторка інтенсиву
+                <br />
+                <b className="uppercase font-normal text-default">
+                  Product Manager
+                </b>
+              </h2>
+              <ul className="mb-5 list-disc list-inside">
+                <li>7 років роботи в ІТ</li>
+                <li><strong>заснувала</strong> діджитал агенство повного циклу <span className="uppercase font-bold">business maker</span></li>
+                <li><strong>Навчила</strong> більше <strong>60 людей</strong> продукт менеджменту</li>
+                <li><strong>IT блогер:</strong> експертний блог в IG 8к+ аудиторії</li>
+                <li><strong>Працювала</strong> з відомими брендами та <strong>ІТ продуктами:</strong></li>
+              </ul>
+            </div>
+            <div className="md:basis-5/12 flex-initial grow-0 max-w-xs md:max-w-md relative m:h-full w-full">
+              <Image src={pmLanaImage} alt="" className="md:absolute md:top-0 right-0 z-20" />
+            </div>
+          </div>
           <div className="w-full relative mt-5">
             <div className="bg-gradient-white mb-3 flex gap-10 items-center p-5 -z-10 overflow-x-auto">
               <Image src={Danone} alt="Danone" />
@@ -164,17 +165,17 @@ export default function Home() {
           <h2 className="text-2xl md:text-4xl mb-5 font-extrabold uppercase text-default">
             Що ви отримаєте під час інтенсиву
           </h2>
-            <ol className="list-decimal list-inside font-bold">
-              <li>
-                Теоретичні знання з продукт менеджменту та розуміння професії
-              </li>
-              <li>
-                Щоденні короткі відео уроки по професії продукт менеджменту
-              </li>
-              <li>
-                  Додаткові матеріали до лекцій та доступ до закритого Телеграм каналу
-              </li>
-            </ol>
+          <ol className="list-decimal list-inside font-bold">
+            <li>
+              Теоретичні знання з продукт менеджменту та розуміння професії
+            </li>
+            <li>
+              Щоденні короткі відео уроки по професії продукт менеджменту
+            </li>
+            <li>
+              Додаткові матеріали до лекцій та доступ до закритого Телеграм каналу
+            </li>
+          </ol>
         </section>
         <section className="max-w-7xl m-auto dark:text-black mb-10 md:mb-20">
           <h2 className="text-2xl md:text-4xl mb-5 font-extrabold uppercase text-default">
@@ -331,7 +332,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="basis-2/3 text-center md:text-left">
-                <h3 className="md:uppercase text-xl">До кінця акції залишилося</h3>
+              <h3 className="md:uppercase text-xl">До кінця акції залишилося</h3>
               <CountDown startDate={new Date("12-04-2023")} format={["hours", "minutes", "seconds"]}/>
             </div>
           </div>
@@ -473,9 +474,9 @@ export default function Home() {
             <article className="bg-white p-3 rounded-3xl auto-rows-min text-xs flex flex-col">
               <div className="flex gap-5 items-center mb-2 ">
                 <Image
-                  src={Pavel}
-                  alt={"Pavel"}
-                  style={{ width: 60, height: 60 }}
+                    src={Pavel}
+                    alt={"Pavel"}
+                    style={{ width: 60, height: 60 }}
                 />
                 <h3 className="text-lg font-bold">Pavel</h3>
               </div>
@@ -537,9 +538,9 @@ export default function Home() {
             <article className="bg-white p-3 rounded-3xl auto-rows-min text-xs flex flex-col">
               <div className="flex gap-5 items-center mb-2">
                 <Image
-                  src={LinaKondratiuk}
-                  alt={"Lina Kondratiuk"}
-                  style={{ width: 60, height: 60 }}
+                    src={LinaKondratiuk}
+                    alt={"Lina Kondratiuk"}
+                    style={{ width: 60, height: 60 }}
                 />
                 <h3 className="text-lg font-bold">Lina Kondratiuk</h3>
               </div>
@@ -656,6 +657,6 @@ export default function Home() {
       <footer className={"p-7 text-center bg-label"}>
         BM University © all right reserved
       </footer>
-    </>
+    </Layout>
   );
 }

@@ -1,5 +1,6 @@
-import './globals.css'
+import '../app/globals.css'
 import { Mulish } from 'next/font/google'
+import React from "react";
 
 const mulish = Mulish({ subsets: ['cyrillic'] })
 
@@ -10,12 +11,6 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="uk-UA">
-      <body className={mulish.className}>{children}</body>
-    </html>
-  )
+}: React.PropsWithChildren) {
+  return <div className={mulish.className} id="layout">{children}</div>
 }

@@ -9,11 +9,7 @@ export const metadata = {
   description: '',
 }
 
-export default function RootLayout({
-                                     children,
-                                   }: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({children}: React.PropsWithChildren) {
     return (
       <html lang="uk-UA">
         <body className={mulish.className}>{children}</body>

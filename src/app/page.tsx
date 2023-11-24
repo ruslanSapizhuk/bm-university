@@ -51,18 +51,21 @@ export default function Home() {
           <section className="md:flex md:justify-between md:gap-20 mb-10 md:mb-20 max-w-7xl m-auto">
             <div className="md:basis-3/6 grow-1">
             <span className="text-sm px-2 py-1 normal-case font-light rounded-sm bg-label">
-                старт 27 листопада
+                старт 4 грудня
               </span>
-              <h2 className="text-xl md:text-2xl mb-10 mt-3 font-extrabold uppercase dark:text-black">
-                двотижневий інтенсив
+              <h2 className="text-xl md:text-2xl mb-5 mt-3 font-extrabold uppercase dark:text-black">
+                3-ох тижневий інтенсив
                 <br />
                 <span className="text-xl">Product Management</span>
               </h2>
-              <p className="mb-10 dark:text-black">
+              <p className="mb-5 dark:text-black">
                 Дізнайся як створювати та монетизувати онлайн продукти, які полюблять мільйони
               </p>
-              <p className="text-xl text-default md:text-2xl font-bold uppercase mb-14">
-                Встигни взяти участь зі знижкою 50%
+              <p className="mb-10 dark:text-black">
+                <b>Нові уроки кожні 2 дні.</b>
+              </p>
+              <p className="text-xl text-default md:text-2xl font-bold uppercase mb-14 max-w-lg">
+                Встигни взяти участь зі знижкою до ЧП 75%
               </p>
               <Link href={LINK} target={"_blank"}>
                 <Button inverted className="w-full mb-10 md:mb-0 md:w-auto">
@@ -102,7 +105,7 @@ export default function Home() {
                 </h2>
                 <ul className="mb-5 list-disc list-inside">
                   <li>7 років роботи в ІТ</li>
-                  <li><strong>заснувала</strong> діджитал агенство повного циклу <span className="uppercase font-bold">business maker</span></li>
+                  <li><b>Заснувала</b> діджитал агенство повного циклу <strong className="uppercase">business maker</strong> яка спеціалізується на створенні та монетизації онлайн продуктів  </li>
                   <li><strong>Навчила</strong> більше <strong>60 людей</strong> продукт менеджменту</li>
                   <li><strong>IT блогер:</strong> експертний блог в IG 8к+ аудиторії</li>
                   <li><strong>Працювала</strong> з відомими брендами та <strong>ІТ продуктами:</strong></li>
@@ -150,14 +153,14 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="grow-1 bg-white rounded-3xl p-5">
-                  <h3 className="font-bold">Маєте лідерські якості</h3>
+                  <h3 className="font-bold">Хоче створити свій онлайн продукт</h3>
                   <p>
-                    Любите працювати з людьми, маєте лідерські якості та хочете реалізувати свій потенціал
+                    Зі знаннями інтенсиву ти зможеш створити свій онлайн продукт та почати заробляти на ньому.
                   </p>
                 </div>
               </div>
               <Link href={LINK} target={"_blank"}>
-                <Button className="mt-10" inverted>Взяти участь зі знижкою 50%</Button>
+                <Button className="mt-10" inverted>Взяти участь зі знижкою 75% </Button>
               </Link>
             </div>
           </section>
@@ -170,10 +173,10 @@ export default function Home() {
                 Теоретичні знання з продукт менеджменту та розуміння професії
               </li>
               <li>
-                Щоденні короткі відео уроки по професії продукт менеджменту
+                Короткі відео уроки по професії продукт менеджменту та створення онлайн продукту
               </li>
               <li>
-                Додаткові матеріали до лекцій та доступ до закритого Телеграм каналу
+                Підтримка куратора на весь час інтенсиву
               </li>
             </ol>
           </section>
@@ -185,47 +188,47 @@ export default function Home() {
               <div className="basis-1/2 grow-1 md:bg-white md:rounded-3xl md:p-5">
                 <ol className="list-decimal list-inside">
                   <li>
-                    Хто такий продукт менеджер
+                    Про онлайн продукти та професію продакт менеджмент.
                   </li>
                   <li>
-                    Проєкт, типи продуктових фіч, монетизація продуктів
+                    Проєкт, типи продуктових фіч, монетизація продуктів.
                   </li>
                   <li>
-                    Аналіз конкурентів, матриця для аналізу
+                    Аналіз конкурентів, матриця для аналізу.
                   </li>
                   <li>
-                    Кастдев
+                    Фреймворк - Кастдев. Як розмовляти та розуміти що хоче твоя ЦА?
                   </li>
                   <li>
-                    Потрібність і цінність
+                    Як визначити який онлайн продукт потрібний ринку?
+                  </li>
+                  <li>
+                    Як робити детальний аналіз ЦА.
                   </li>
                 </ol>
               </div>
               <div className="basis-1/2 grow-1 md:bg-white md:rounded-3xl md:p-5">
-                <ol className="list-decimal list-inside" start={6}>
+                <ol className="list-decimal list-inside" start={7}>
                   <li>
-                    Цільова аудиторія
+                    Фреймворк. Jobs-to-be-Done.  Розіберись як та чому клієнт приймає певні рішення в своєму житті.
                   </li>
                   <li>
-                    Фреймворк. LTBD
+                    Фреймворк - персона. Оцифровка твого покупця
                   </li>
                   <li>
-                    Персона
+                    Позиціонування продукту на ринку
                   </li>
                   <li>
-                    Позиціонування
+                    Майстер клас. Як ввійти в айті та знайти першу роботу продактом.
                   </li>
                   <li>
-                    Юніт Економіка
-                  </li>
-                  <li>
-                    Юніт Економіка. Ретеншн
+                    Майстер клас. Як створити свій онлайн продукт та заробляти на ньому
                   </li>
                 </ol>
               </div>
             </div>
             <Link href={LINK} target={"_blank"}>
-              <Button className="mt-10" inverted>Взяти участь зі знижкою 50%</Button>
+              <Button className="mt-10" inverted>Взяти участь зі знижкою 75%</Button>
             </Link>
           </section>
           <section className="mb-10 md:mb-20 max-w-7xl m-auto dark:text-black">
@@ -283,11 +286,9 @@ export default function Home() {
                   <div>
                     <Image src={icon5} alt={""} />
                   </div>
-                  <h3 className="font-bold">+ Сфера освіти - EDtech</h3>
+                  <h3 className="font-bold">+ Працюй на себе</h3>
                   <p>
-                    Можна почати працювати з експертами, які створюють свої
-                    освітні продукти та потребують допомоги в організації процесів
-                    його створення
+                    Зрозумій, як створювати та монетизувати успішні онлайн продукт, які будуть любити клієнти.  Створи свій продукт та почни заробляти.
                   </p>
                 </div>
               </div>
@@ -317,13 +318,13 @@ export default function Home() {
           {/*</section>*/}
           <section className="p-10 bg-gradient mb-10 md:mb-20 rounded-2xl max-w-4xl ml-auto mr-auto">
             <h3 className="text-xl md:text-2xl md:text-3xl md:uppercase md:text-white max-w-2xl mb-3">
-              Приєднуйтесь до інтенсиву вже зараз за <b>спеціальною, обмеженою у часі пропозицією всього за</b>
+              Приєднуйтесь до інтенсиву вже зараз за <b>спеціальною, обмеженою у часі пропозицією всього за 2400 ГРН</b>
             </h3>
-            <div className="flex flex-col md:flex-row gap-2 items-center md:gap-10">
-              <div className="bg-label p-10 rounded-3xl text-center">
-                <div className="flex flex-col md:items-center md:flex-row gap-3 items-center mb-5">
-                  <span className="text-slate-600 text-2xl md:text-xl"><s>3200</s></span>
-                  <span className="text-3xl md:text-2xl font-bold">1600</span>
+            <div className="flex flex-col md:flex-row gap-2 items-center md:gap-10 md:flex-row-reverse">
+              <div className="bg-label p-10 rounded-3xl text-center basis-2/5">
+                <div className="flex flex-col gap-3 items-center mb-5">
+                  <span className="text-white text-2xl md:text-xl"><s>9600 ГРН</s></span>
+                  <span className="text-3xl md:text-2xl font-bold">2400 ГРН</span>
                 </div>
                 <Link href={LINK} target={"_blank"}>
                   <Button>
@@ -331,7 +332,7 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
-              <div className="basis-2/3 text-center md:text-left">
+              <div className="basis-2/3 text-center md:text-left basis-3/5">
                 <h3 className="md:uppercase text-xl">До кінця акції залишилося</h3>
                 <CountDown startDate={new Date("12-04-2023")} format={["hours", "minutes", "seconds"]}/>
               </div>
@@ -339,7 +340,7 @@ export default function Home() {
           </section>
           <section className="mb-10 md:mb-20 max-w-7xl m-auto dark:text-black">
             <h2 className="text-2xl md:text-4xl mb-10 font-extrabold uppercase">
-              Відгуки <br />
+              Відгуки та кейси<br />
               студентів{" "}
               <span style={{ color: "#A699FF" }} className="pr-3">
               Лани

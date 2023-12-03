@@ -51,18 +51,20 @@ export default function Home() {
           <section className="md:flex md:justify-between md:gap-20 mb-10 md:mb-20 max-w-7xl m-auto">
             <div className="md:basis-3/6 grow-1">
             <span className="text-sm px-2 py-1 normal-case font-light rounded-sm bg-label">
-                старт 4 грудня
+                Доступ до уроків відразу після оплати
               </span>
-              <h2 className="text-xl md:text-2xl mb-5 mt-3 font-extrabold uppercase dark:text-black">
-                3-ох тижневий інтенсив
-                <br />
-                <span className="text-xl">Product Management</span>
+              <h2 className="text-xl md:text-2xl font-extrabold uppercase dark:text-black">
+                  Познайомся з  професією
+                  <br/>
+                  Product Manager
+                  <br/>
+                  всього за 21 день
               </h2>
+              <h3 className="mb-5 mt-3 uppercase text-xl md:text-2xl">
+                Та увійди в ІТ уже в 2024
+              </h3>
               <p className="mb-5 dark:text-black">
-                Дізнайся як створювати та монетизувати онлайн продукти, які полюблять мільйони
-              </p>
-              <p className="mb-10 dark:text-black">
-                <b>Нові уроки кожні 2 дні.</b>
+                Дізнайся як створюються твої улюблені ІТ продукти - Instagram, TikTok, Telegram, Youtube, Netflix та інші, адже опанувавши професію продукта, ти можеш працювати з продуктами, якими користуються мільйони👩‍💻
               </p>
               <p className="text-xl text-default md:text-2xl font-bold uppercase mb-14 max-w-lg">
                 Встигни взяти участь зі знижкою до ЧП 75%
@@ -336,6 +338,10 @@ export default function Home() {
                 <h3 className="md:uppercase text-xl">До кінця акції залишилося</h3>
                 <CountDown startDate={new Date("12-04-2023")} format={["hours", "minutes", "seconds"]}/>
               </div>
+            </div>
+            <div className="p-5 bg-white rounded-3xl mt-5">
+              🎁При покупці інтенсиву протягом 10 хвилин, ти отримаєш безкоштовно квиток на мастер клас від Лани
+              з рекомендаціями як увійти в ІТ та розвиватися в професії🎁
             </div>
           </section>
           <section className="mb-10 md:mb-20 max-w-7xl m-auto dark:text-black">

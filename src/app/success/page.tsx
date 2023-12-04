@@ -20,12 +20,6 @@ export default function SaccessPage() {
                     </Link>
                 </div>
             </div>
-            <Script id={"track"}>
-                {`fbq('track', 'Purchase', {
-                    value: 0.00,
-                    currency: 'USD'
-                });`}
-            </Script>
         </section>
     )
 }

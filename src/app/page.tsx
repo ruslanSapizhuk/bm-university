@@ -31,6 +31,7 @@ import hart from "@/assets/hart.png";
 import Video1 from "@/components/videos/Video1";
 import Video2 from "@/components/videos/Video2";
 import Video3 from "@/components/videos/Video3";
+import Script from "next/script";
 
 const LINK = "https://secure.wayforpay.com/button/bf10bc9754bad";
 

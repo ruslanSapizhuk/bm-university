@@ -53,7 +53,7 @@ export default function Home() {
             <span className="text-sm px-2 py-1 normal-case font-light rounded-sm bg-label">
                 Доступ до уроків відразу після оплати
               </span>
-              <h2 className="text-xl md:text-2xl font-extrabold uppercase dark:text-black">
+              <h2 className="text-xl md:text-2xl mt-5 font-extrabold uppercase dark:text-black">
                   Познайомся з  професією
                   <br/>
                   Product Manager
@@ -67,7 +67,7 @@ export default function Home() {
                 Дізнайся як створюються твої улюблені ІТ продукти - Instagram, TikTok, Telegram, Youtube, Netflix та інші, адже опанувавши професію продукта, ти можеш працювати з продуктами, якими користуються мільйони👩‍💻
               </p>
               <p className="text-xl text-default md:text-2xl font-bold uppercase mb-14 max-w-lg">
-                Встигни взяти участь зі знижкою до ЧП 75%
+                Встигни взяти участь зі знижкою 75%
               </p>
               <Link href={LINK} target={"_blank"}>
                 <Button inverted className="w-full mb-10 md:mb-0 md:w-auto">
@@ -320,13 +320,13 @@ export default function Home() {
           {/*</section>*/}
           <section className="p-10 bg-gradient mb-10 md:mb-20 rounded-2xl max-w-4xl ml-auto mr-auto">
             <h3 className="text-xl md:text-2xl md:text-3xl md:uppercase md:text-white max-w-2xl mb-3">
-              Приєднуйтесь до інтенсиву вже зараз за <b>спеціальною, обмеженою у часі пропозицією всього за 2400 ГРН</b>
+              Приєднуйтесь до інтенсиву вже зараз за <b>спеціальною, обмеженою у часі пропозицією всього за 720 ГРН</b>
             </h3>
             <div className="flex flex-col md:flex-row gap-2 items-center md:gap-10 md:flex-row-reverse">
               <div className="bg-label p-10 rounded-3xl text-center basis-2/5">
                 <div className="flex flex-col gap-3 items-center mb-5">
-                  <span className="text-white text-2xl md:text-xl"><s>9600 ГРН</s></span>
-                  <span className="text-3xl md:text-2xl font-bold">2400 ГРН</span>
+                  <span className="text-white text-2xl md:text-xl"><s>2880 ГРН</s></span>
+                  <span className="text-3xl md:text-2xl font-bold">720 ГРН</span>
                 </div>
                 <Link href={LINK} target={"_blank"}>
                   <Button>

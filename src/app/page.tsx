@@ -31,10 +31,10 @@ import hart from "@/assets/hart.png";
 import Video1 from "@/components/videos/Video1";
 import Video2 from "@/components/videos/Video2";
 import Video3 from "@/components/videos/Video3";
-import Script from "next/script";
 
 const LINK = "https://secure.wayforpay.com/button/bf10bc9754bad";
-
+const FULL_PRICE = 2000;
+const REAL_PRICE = 499;
 
 export default function Home() {
   return (
@@ -321,13 +321,13 @@ export default function Home() {
           {/*</section>*/}
           <section className="p-10 bg-gradient mb-10 md:mb-20 rounded-2xl max-w-4xl ml-auto mr-auto">
             <h3 className="text-xl md:text-2xl md:text-3xl md:uppercase md:text-white max-w-2xl mb-3">
-              Приєднуйтесь до інтенсиву вже зараз за <b>спеціальною, обмеженою у часі пропозицією всього за 720 ГРН</b>
+              Приєднуйтесь до інтенсиву вже зараз за <b>спеціальною, обмеженою у часі пропозицією всього за {REAL_PRICE} ГРН</b>
             </h3>
             <div className="flex flex-col md:flex-row gap-2 items-center md:gap-10 md:flex-row-reverse">
               <div className="bg-label p-10 rounded-3xl text-center basis-2/5">
                 <div className="flex flex-col gap-3 items-center mb-5">
-                  <span className="text-white text-2xl md:text-xl"><s>2880 ГРН</s></span>
-                  <span className="text-3xl md:text-2xl font-bold">720 ГРН</span>
+                  <span className="text-white text-2xl md:text-xl"><s>{FULL_PRICE} ГРН</s></span>
+                  <span className="text-3xl md:text-2xl font-bold">{REAL_PRICE} ГРН</span>
                 </div>
                 <Link href={LINK} target={"_blank"}>
                   <Button>
